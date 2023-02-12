@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <TITLE> La Thị Khánh Linh 💗 </TITLE>
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link type="text/css" rel="stylesheet" href="../static/style.css" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</HEAD>
+
+<BODY>
+    <canvas id="Day" width="300" height="300"></canvas>
+    <canvas id="nameCanvas" width="300" height="200">
+</canvas>
+
+    <canvas id="pinkboard"></canvas>
+    <script src="../static/main.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+    <audio id="playAudio" autoplay loop>
+            <source src="../static/b1.mp3" type="audio/mpeg">
+            <!-- <source src="{{ url_for('static', filename='b1.mp3') }}" type="audio/mpeg"> -->
+        </audio>
+
+    <a class="link" href="/klinh">More</a>
+</BODY>
+
+</HTML>
