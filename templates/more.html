@@ -12,12 +12,27 @@
 
 <body>
     <div>
-        <a class="link" id="nav" href="/" style="position: static;">Home</a>
+        <a class="link" id="nav1" href="/" style="position: static;;display:inline-block;">Home</a>
+        <a class="link" id="nav2" href="/toi-yeu-em" style="position: static;display:none;">Special</a>
         <script>
             if (window.screen.width <= window.screen.height * 0.75) {
-                var elements = document.getElementById('nav').style.fontSize = "80px";
+                var elements = document.getElementById('nav1').style.fontSize = "80px";
             } else {
-                var elements = document.getElementById('nav').style.fontSize = "20px";
+                var elements = document.getElementById('nav1').style.fontSize = "20px";
+            }
+            if (window.screen.width <= window.screen.height * 0.75) {
+                var elements = document.getElementById('nav2').style.fontSize = "80px";
+            } else {
+                var elements = document.getElementById('nav2').style.fontSize = "20px";
+            }
+            var currentdate = new Date();
+            our = currentdate.getHours();
+            minute = currentdate.getMinutes();
+            date = currentdate.getDate();
+            month = currentdate.getMonth();
+            year = currentdate.getFullYear();
+            if ((year - 29) % 100 == 0 | (month == 9 - 1 && date == 2) | (minute == 29) | ((our == 2 | our == 14) && minute == 9)) {
+                document.getElementById("nav2").style.display = "inline-block";
             }
         </script>
         <div id="013f71fa-2de8-4f3e-9da8-2152a17de024" class="plotly-graph-div" style="height:100%; width:100%;"></div>
