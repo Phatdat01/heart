@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <TITLE> La Thị Khánh Linh 💗 </TITLE>
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link type="text/css" rel="stylesheet" href="../static/style.css" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <a class="link" href="/">Home</a>
+    <script>
+        if (window.screen.width <= window.screen.height) {
+            document.getElementsByClassName('link').style.height = "100vh";
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('https://tinyurl.com/43tjp9f2');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <!-- <img src="https://tinyurl.com/43tjp9f2" > -->
+    <audio id="playAudio" autoplay loop>
+        <source src="{{ url_for('static', filename='b3.mp3') }}" type="audio/mpeg">
+    </audio>
+    <h1 style="color:white">
+        <marquee style="position: absolute; top: 10vh;" scrollamount="12">
+            <div id="param1"></div>
+        </marquee>
+        <script>
+            var currentdate = new Date();
+            year = currentdate.getFullYear() - 2016
+            document.getElementById('param1').innerHTML = "Đến giờ tôi đã yêu cô ấy tận " + year + " năm rồi"
+        </script>
+        <marquee style="position: absolute; bottom: 10vh;" scrollamount="12">Không biết giữ thì tôi cướp cô ấy đấy!!</marquee>
+    </h1>
+</body>
+
+</html>

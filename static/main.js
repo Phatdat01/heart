@@ -285,19 +285,27 @@
         var ctxName = canvasName.getContext("2d");
         var txtName = 'La Thị\nKhánh Linh';
         ctxName.font = "18px French Script MT";
-        if (canvasName.width < 500) {
-            if (canvasName.width < 200) {
-                if (canvasName.width < 100) {
-                    ctxName.font = "12px French Script MT";
+        if (window.screen.width <= window.screen.height * 0.75) {
+            ctxName.font = "11px French Script MT";
+        } else {
+            if (canvasName.width < 500) {
+                if (canvasName.width < 200) {
+                    if (canvasName.width < 100) {
+                        ctxName.font = "12px French Script MT";
+                    } else {
+                        ctxName.font = "14px French Script MT";
+                    }
                 } else {
-                    ctxName.font = "14px French Script MT";
+                    ctxName.font = "16px French Script MT";
                 }
-            } else {
-                ctxName.font = "16px French Script MT";
             }
         }
         ctxName.fillStyle = "red";
         ctxName.textAlign = "center";
         var lines = txtName.split('\n');
         for (var i = 0; i < lines.length; i++)
-            ctxName.fillText(lines[i], canvasName.width / 2, canvasName.height / 2 + (i * canvasName.height / 10) - canvasName.height / 20);
+            if (window.screen.width <= window.screen.height * 0.75) {
+                ctxName.fillText(lines[i], canvasName.width / 2, canvasName.height / 2 + (i * canvasName.height / 20) - canvasName.height / 60);
+            } else {
+                ctxName.fillText(lines[i], canvasName.width / 2, canvasName.height / 2 + (i * canvasName.height / 10) - canvasName.height / 20);
+            }

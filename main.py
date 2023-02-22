@@ -10,5 +10,9 @@ def home():
 def more():
     return render_template('./more.html')
 
+@app.route('/toi-yeu-em',methods=['GET', 'POST'])
+def hope():
+    return render_template('./hope.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
