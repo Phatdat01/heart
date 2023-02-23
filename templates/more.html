@@ -31,7 +31,8 @@
             date = currentdate.getDate();
             month = currentdate.getMonth();
             year = currentdate.getFullYear();
-            if ((year - 29) % 100 == 0 | (month == 9 - 1 && date == 2) | (minute == 29) | ((our == 2 | our == 14) && minute == 9)) {
+            second = currentdate.getSeconds();
+            if ((year - 29) % 100 == 0 | (month == 9 - 1 && date == 2) | (minute == 29 && second <= 29) | ((our == 2 | our == 14) && minute == 9)) {
                 document.getElementById("nav2").style.display = "inline-block";
             }
         </script>
