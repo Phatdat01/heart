@@ -85,3 +85,45 @@ audio {
     position: absolute;
     height: 100%;
 }
+
+#zoom {
+    animation: heart 2s ease infinite
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.025, 1.025);
+        -webkit-transform: scale(1.025, 1.025);
+        -moz-transform: scale(1.025, 1.025);
+        -o-transform: scale(1.025, 1.025);
+        -ms-transform: scale(1.025, 1.025);
+    }
+    50% {
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+        -moz-transform: scale(1.05, 1.05);
+        -o-transform: scale(1.05, 1.05);
+        -ms-transform: scale(1.05, 1.05);
+    }
+    75% {
+        transform: scale(1.025, 1.025);
+        -webkit-transform: scale(1.025, 1.025);
+        -moz-transform: scale(1.025, 1.025);
+        -o-transform: scale(1.025, 1.025);
+        -ms-transform: scale(1.025, 1.025);
+    }
+    100% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+    }
+}
