@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <img src='https://tinyurl.com/43tjp9f2' width="100%" , height="100%" id="zoom">
+    <img src='https://tinyurl.com/43tjp9f2' id="zoom" style="pointer-events: none;height: 100%;width: 100%;">
     <a class="link" id="nav" href="/" style="position: absolute;z-index: 100;left:0">Home</a>
     <script>
         if (window.screen.width <= window.screen.height * 0.75) {
@@ -31,7 +31,6 @@
             background-position: center;
         } */
     </style>
-    <!-- <img src="https://tinyurl.com/43tjp9f2" > -->
     <audio id="playAudio" autoplay loop>
         <source src="{{ url_for('static', filename='b3.mp3') }}" type="audio/mpeg">
     </audio>
