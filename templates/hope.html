@@ -11,23 +11,25 @@
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 
-<body id="zoom">
-    <a class="link" id="nav" href="/">Home</a>
+<body>
+    <img src='https://tinyurl.com/43tjp9f2' width="100%" , height="100%" id="zoom">
+    <a class="link" id="nav" href="/" style="position: absolute;z-index: 100;left:0">Home</a>
     <script>
         if (window.screen.width <= window.screen.height * 0.75) {
             var elements = document.getElementById('nav').style.fontSize = "80px";
+            document.getElementsById
         } else {
             var elements = document.getElementById('nav').style.fontSize = "20px";
         }
     </script>
     <style>
-        body {
+        /* body {
             background-image: url('https://tinyurl.com/43tjp9f2');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
-        }
+        } */
     </style>
     <!-- <img src="https://tinyurl.com/43tjp9f2" > -->
     <audio id="playAudio" autoplay loop>

@@ -98,12 +98,33 @@ audio {
         -o-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
     }
-    25% {
-        transform: scale(1.025, 1.025);
-        -webkit-transform: scale(1.025, 1.025);
-        -moz-transform: scale(1.025, 1.025);
-        -o-transform: scale(1.025, 1.025);
-        -ms-transform: scale(1.025, 1.025);
+    10% {
+        transform: scale(1.01, 1.01);
+        -webkit-transform: scale(1.01, 1.01);
+        -moz-transform: scale(1.01, 1.01);
+        -o-transform: scale(1.01, 1.01);
+        -ms-transform: scale(1.01, 1.01);
+    }
+    20% {
+        transform: scale(1.02, 1.02);
+        -webkit-transform: scale(1.02, 1.02);
+        -moz-transform: scale(1.02, 1.02);
+        -o-transform: scale(1.02, 1.02);
+        -ms-transform: scale(1.02, 1.02);
+    }
+    30% {
+        transform: scale(1.03, 1.03);
+        -webkit-transform: scale(1.03, 1.03);
+        -moz-transform: scale(1.03, 1.03);
+        -o-transform: scale(1.03, 1.03);
+        -ms-transform: scale(1.03, 1.03);
+    }
+    40% {
+        transform: scale(1.04, 1.04);
+        -webkit-transform: scale(1.04, 1.04);
+        -moz-transform: scale(1.04, 1.04);
+        -o-transform: scale(1.04, 1.04);
+        -ms-transform: scale(1.04, 1.04);
     }
     50% {
         transform: scale(1.05, 1.05);
@@ -112,12 +133,33 @@ audio {
         -o-transform: scale(1.05, 1.05);
         -ms-transform: scale(1.05, 1.05);
     }
-    75% {
-        transform: scale(1.025, 1.025);
-        -webkit-transform: scale(1.025, 1.025);
-        -moz-transform: scale(1.025, 1.025);
-        -o-transform: scale(1.025, 1.025);
-        -ms-transform: scale(1.025, 1.025);
+    60% {
+        transform: scale(1.04, 1.04);
+        -webkit-transform: scale(1.04, 1.04);
+        -moz-transform: scale(1.04, 1.04);
+        -o-transform: scale(1.04, 1.04);
+        -ms-transform: scale(1.04, 1.04);
+    }
+    70% {
+        transform: scale(1.03, 1.03);
+        -webkit-transform: scale(1.03, 1.03);
+        -moz-transform: scale(1.03, 1.03);
+        -o-transform: scale(1.03, 1.03);
+        -ms-transform: scale(1.03, 1.03);
+    }
+    80% {
+        transform: scale(1.02, 1.02);
+        -webkit-transform: scale(1.02, 1.02);
+        -moz-transform: scale(1.02, 1.02);
+        -o-transform: scale(1.02, 1.02);
+        -ms-transform: scale(1.02, 1.02);
+    }
+    90% {
+        transform: scale(1.01, 1.01);
+        -webkit-transform: scale(1.01, 1.01);
+        -moz-transform: scale(1.01, 1.01);
+        -o-transform: scale(1.01, 1.01);
+        -ms-transform: scale(1.01, 1.01);
     }
     100% {
         transform: scale(1, 1);
