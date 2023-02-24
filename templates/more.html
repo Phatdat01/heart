@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="#">
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
@@ -18,14 +19,13 @@
         <script>
             if (window.screen.width <= window.screen.height * 0.75) {
                 var elements = document.getElementById('nav1').style.fontSize = "80px";
+                var element = document.getElementById('nav2').style.fontSize = "80px";
+                document.write('<style>.user-select-none.svg-container{top:50%;} </style>');
             } else {
                 var elements = document.getElementById('nav1').style.fontSize = "20px";
+                var element = document.getElementById('nav2').style.fontSize = "20px";
             }
-            if (window.screen.width <= window.screen.height * 0.75) {
-                var elements = document.getElementById('nav2').style.fontSize = "80px";
-            } else {
-                var elements = document.getElementById('nav2').style.fontSize = "20px";
-            }
+
             var currentdate = new Date();
             our = currentdate.getHours();
             minute = currentdate.getMinutes();
@@ -33,7 +33,7 @@
             month = currentdate.getMonth();
             year = currentdate.getFullYear();
             second = currentdate.getSeconds();
-            if ((year - 29) % 100 == 0 | (month == 9 - 1 && date == 2) | (minute == 29 && second <= 29) | ((our == 2 | our == 14) && minute == 9)) {
+            if (1 | (year - 29) % 100 == 0 | (month == 9 - 1 && date == 2) | (minute == 29 && second <= 29) | ((our == 2 | our == 14) && minute == 9)) {
                 document.getElementById("nav2").style.display = "inline-block";
             }
         </script>
