@@ -2,6 +2,8 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="#">
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
@@ -15,16 +17,15 @@
         <a class="link" id="nav1" href="/" style="position: static;;display:inline-block;">Home</a>
         <a class="link" id="nav2" href="/toi-yeu-em" style="position: static;display:none;">Special</a>
         <script>
-            if (window.screen.width <= window.screen.height * 0.75) {
+            if (window.screen.width <= window.screen.height) {
                 var elements = document.getElementById('nav1').style.fontSize = "80px";
+                var element = document.getElementById('nav2').style.fontSize = "80px";
+                document.write('<style>.user-select-none.svg-container{top:45%;} </style>');
             } else {
                 var elements = document.getElementById('nav1').style.fontSize = "20px";
+                var element = document.getElementById('nav2').style.fontSize = "20px";
             }
-            if (window.screen.width <= window.screen.height * 0.75) {
-                var elements = document.getElementById('nav2').style.fontSize = "80px";
-            } else {
-                var elements = document.getElementById('nav2').style.fontSize = "20px";
-            }
+
             var currentdate = new Date();
             our = currentdate.getHours();
             minute = currentdate.getMinutes();
