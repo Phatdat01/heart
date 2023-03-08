@@ -274,11 +274,10 @@
                 }
             }
         }
-
         ctxHeader.font = "18px Cavolini";
         ctxHeader.fillStyle = "red";
         ctxHeader.textAlign = "top";
-        ctxHeader.fillText(txtHeader, canvasHeader.width / 4, canvasHeader.height * 0.005 + (i * canvasHeader.height / 10) - canvasHeader.height / 20);
+        ctxHeader.fillText(txtHeader, canvasHeader.width / 4 + (14 - txtHeader.length) * 4, canvasHeader.height * 0.005 + (i * canvasHeader.height / 10) - canvasHeader.height / 20);
 
         //Show name
         var canvasName = document.getElementById("nameCanvas");
