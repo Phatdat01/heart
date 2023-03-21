@@ -262,9 +262,9 @@
         var txtHeader = "";
         // lstDateName = ['HAPPY VALENTINE', 'HAPPY WOMEN\'S DAY', 'HAPPY BIRTHDAY']
 
-        dateDay = [14, 8, 2];
-        monthDay = [2, 3, 9];
-        nameDay = ['HAPPY VALENTINE', 'HAPPY WOMEN\'S DAY', 'HAPPY BIRTHDAY'];
+        dateDay = [14, 8, 2, 4];
+        monthDay = [2, 3, 9, 1];
+        nameDay = ['HAPPY VALENTINE', 'HAPPY WOMEN\'S DAY', 'HAPPY BIRTHDAY', 'YOUR PEACEFUL SMILE'];
 
         if (dateDay.includes(currentdate.getDate())) {
             for (let i = 0; i < monthDay.length; i++) {
