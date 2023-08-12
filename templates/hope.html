@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <!-- <img src='https://tinyurl.com/43tjp9f2' id="zoom" style="pointer-events: none;height: 100%;width: 100%;"> -->
-    <video id="zoom" autoplay muted loop style="pointer-events: none;height: 100%;width: 100%;">
+    <video class="video" id="zoom" autoplay muted loop style="pointer-events: none;height: 100%;width: 100%;">
         <source src="../static/special.mp4" type="video/mp4">
-      </video>
+    </video>
+    <img class="image" src='https://tinyurl.com/43tjp9f2' id="zoom" style="pointer-events: none;height: 100%;width: 100%;">
+
     <a class="link" id="nav" href="/" style="position: absolute;z-index: 100;left:0">Home</a>
     <script>
         if (window.screen.width <= window.screen.height * 0.75) {
@@ -47,6 +48,22 @@
             var currentdate = new Date();
             year = currentdate.getFullYear() - 2016
             document.getElementById('param1').innerHTML = "Đến giờ tôi đã yêu cô ấy tận " + year + " năm rồi"
+
+            second = currentdate.getSeconds()
+            var image = document.getElementsByClassName('image');
+            var video = document.getElementsByClassName('video');
+            var audioSource = document.getElementById('playAudio');
+            if (second % 2 == 0) {
+                audioSource.src = "../static/b3.mp3";
+
+                for (var i = 0; i < video.length; i++) {
+                    video[i].style.display = 'none';
+                }
+            } else {
+                for (var i = 0; i < image.length; i++) {
+                    image[i].style.display = 'none';
+                }
+            }
         </script>
     </h1>
 </body>
